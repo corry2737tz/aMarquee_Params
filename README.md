@@ -1,0 +1,2 @@
+# aMarquee_Params
+Func _GUICtrlMarquee_Init()      ; Add a new line to the array     $aMarquee_Params[0][0] += 1     ReDim $aMarquee_Params[$aMarquee_Params[0][0] + 1][13]     ; Copy over the default values     For $i = 2 To 12         $aMarquee_Params[$aMarquee_Params[0][0]][$i] = $aMarquee_Params[0][$i]     Next     ; Return index of marquee in array     Return $aMarquee_Params[0][0]  EndFunc   ;==>_GUICtrlMarquee_Init  ; #FUNCTION# 
